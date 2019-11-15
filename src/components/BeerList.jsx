@@ -21,29 +21,30 @@ var MasterBeerList = [
     type: "Lager"
   },
   {
-      name: "Total Domination",
-      brewery: "Ninkasi",
-      abv: "6.7",
-      amount: 147,
-      price: 5.00,
-      type: "IPA"
-  },
-  {
     name: "Total Domination",
     brewery: "Ninkasi",
     abv: "6.7",
     amount: 147,
     price: 5.00,
     type: "IPA"
-},
+  },
+  {
+    name: "Twister Creek IPA",
+    brewery: "Denali Brewing",
+    abv: "6.7",
+    amount: 147,
+    price: 5.00,
+    type: "IPA"
+  },
+    
 ];
 
 
-function BeerList() {    
-  return(
+function BeerList() {
+  return (
     <div>
       <h2>Current beer list!</h2>
-      <hr/>
+      <hr />
       {MasterBeerList.map((beer, index) =>
         <Beer name={beer.name}
           brewery={beer.brewery}
@@ -51,8 +52,8 @@ function BeerList() {
           amount={beer.amount}
           price={beer.price}
           type={beer.type}
-          key={index}/>
-        
+          key={index} />
+
       )}
     </div>
   );

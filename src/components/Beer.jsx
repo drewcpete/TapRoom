@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Keg from "../assets/keg.png";
+import Keg from "../assets/img/keg.png";
 
 function Beer(props) {
 
