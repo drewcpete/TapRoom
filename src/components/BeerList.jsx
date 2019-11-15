@@ -53,7 +53,6 @@ function BeerList() {
           price={beer.price}
           type={beer.type}
           key={index} />
-
       )}
     </div>
   );

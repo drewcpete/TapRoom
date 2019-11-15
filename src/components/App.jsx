@@ -5,25 +5,24 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import NavBar from "./NavBar";
 import Error404 from "./Error404";
+import Beer from "./Beer";
 
 function App(){
   var siteStyle = {
     backgroundColor : "lightgray",
     borderRadius: "60px",
     padding: "25px",
-    textAlign: "center"
+    textAlign: "center",    
   };
   return (
     <div>
 
       <NavBar/>
       <div style={siteStyle} className="container">
-
-
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route  path="/Beer" component={BeerList} />
-          {/* <Route path ='/Class' component={ClassList} /> */}
+          <Route path="/Beer" component={BeerList} />
+          <Route path ="/NewBeer" component={Beer} />
           <Route component={Error404} />
         </Switch>
       </div>

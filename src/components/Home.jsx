@@ -1,11 +1,11 @@
 import React from "react";
-import Bar from "../assets/img/bar.jpg"
+import Bar from "../assets/img/bar.jpg";
 
 
 var bar = {
-    width: "90%",
-    height: "auto"
-}
+  width: "90%",
+  height: "auto"
+};
 function Home(){
   return (
     
@@ -15,7 +15,7 @@ function Home(){
         <h4>Thanks for coming!</h4>
       </div>
       <div className="bar">
-          <img style={bar} src={Bar} alt=""/>
+        <img style={bar} src={Bar} alt=""/>
       </div>
     </div>
   );

@@ -12,7 +12,8 @@ function Beer(props) {
 
   var galleryStyle = {
     margin: "0 auto 0 auto",
-    backgroundColor: "grey"
+    backgroundColor: "grey",
+    borderRadius: "20%"
   };
 
   var beerStyle = {
@@ -31,7 +32,6 @@ function Beer(props) {
   var keg = {
     height: "50px",
     backgroundColor: "green",
-    borderRadius: "25px"
   };
 
 
