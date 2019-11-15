@@ -3,4 +3,4 @@
 ### Description
 
 ### Component Structure
-![flow chart](./src/assets/FlowChart)
+![flow chart](./src/assets/img/flowchart.png)
