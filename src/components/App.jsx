@@ -8,7 +8,7 @@ import Error404 from "./Error404";
 
 function App(){
   var siteStyle = {
-    backgroundColor : "burlywood",
+    backgroundColor : "cyan",
   };
   return (
     <div style={siteStyle} className="container">
