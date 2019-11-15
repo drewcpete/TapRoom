@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Keg from "../assets/keg.png"
 
 function Beer(props) {
 
@@ -15,8 +16,8 @@ function Beer(props) {
   };
 
   var beerStyle = {
-    width: "500px",
-    height: "500px",
+    width: "275px",
+    height: "275px",
     textAlign: "center",
     padding: "15",
   };
@@ -27,6 +28,10 @@ function Beer(props) {
     justifyContent: "center",
     margin: "1% 1%",
   };
+  var keg = {
+    height: "50px",
+    backgroundColor: "green"
+  }
 
 
   return (
@@ -37,6 +42,12 @@ function Beer(props) {
           <p>Brewery: {props.brewery}</p>
           <p>${props.price}</p>
           <p>ABV: {props.abv}%</p>
+          <div >
+          
+            <img style={keg} src={Keg} alt="keg"/>
+          </div>
+          <button className="btn btn-warning">Pour this beer!</button>
+
             
 
         </div>

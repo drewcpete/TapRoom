@@ -20,12 +20,12 @@ function NavBar(){
     <nav className="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-white border-bottom box-shadow mb-3">
       <div className="container">
         <a className="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" href="\">&rew's Tap Room</a>
-        <button style={navBar} className="btn btn-info nav-link text-info" ><Link style={navLink} to="/Student">Beers</Link></button>
+        <button style={navBar} className="btn btn-info nav-link text-info" ><Link style={navLink} to="/Beer">Beers</Link></button>
             
         <div className="navbar-collapse collapse d-lg-inline-flex flex-lg-row">
           <ul className="navbar-nav flex-grow-1 mr-auto">
             <li className="nav-item">
-              <button style={navBar} className="btn btn-info nav-link text-light" ><Link style={navLink} to="/Student">Add a new Beer</Link></button>
+              <button style={navBar} className="btn btn-info nav-link text-light" ><Link style={navLink} to="/NewBeer">Add a new Beer</Link></button>
                     
             </li>
 

@@ -9,14 +9,14 @@ var MasterBeerList = [
     brewery: "Modelo",
     abv: "5.4",
     amount: 147,
-    price: 2.75
+    price: 3.75
   },
   {
-    name: "Negra Modelo",
-    brewery: "Modelo",
+    name: "PBR",
+    brewery: "Pabst",
     abv: "4.6",
     amount: 147,
-    price: 2.00
+    price: 2.50
   },
 ];
 
@@ -24,7 +24,7 @@ var MasterBeerList = [
 function BeerList() {
   return(
     <div>
-
+        <h2>Currently available beers!</h2>
       <hr/>
       {MasterBeerList.map((beer, index) =>
         <Beer name={beer.name}
