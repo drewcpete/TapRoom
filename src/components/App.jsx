@@ -17,8 +17,8 @@ function App(){
       <NavBar/>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route  path="/Student" component={StudentList} />
-        <Route path ='/Class' component={ClassList} />
+        <Route  path="/Beer" component={BeerList} />
+        {/* <Route path ='/Class' component={ClassList} /> */}
         <Route component={Error404} />
       </Switch>
     </div>
