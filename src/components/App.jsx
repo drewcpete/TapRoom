@@ -6,6 +6,7 @@ import Home from "./Home";
 import NavBar from "./NavBar";
 import Error404 from "./Error404";
 import Beer from "./Beer";
+import NewBeer from "./NewBeer"
 
 function App(){
   var siteStyle = {
@@ -22,7 +23,7 @@ function App(){
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/Beer" component={BeerList} />
-          <Route path ="/NewBeer" component={Beer} />
+          <Route path ="/NewBeer" component={NewBeer} />
           <Route component={Error404} />
         </Switch>
       </div>
