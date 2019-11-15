@@ -9,18 +9,24 @@ import Error404 from "./Error404";
 function App(){
   var siteStyle = {
     backgroundColor : "lightgray",
+    borderRadius: "60px",
+    padding: "25px",
+    textAlign: "center"
   };
   return (
-    <div style={siteStyle} className="container">
-
+    <div>
 
       <NavBar/>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route  path="/Beer" component={BeerList} />
-        {/* <Route path ='/Class' component={ClassList} /> */}
-        <Route component={Error404} />
-      </Switch>
+      <div style={siteStyle} className="container">
+
+
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route  path="/Beer" component={BeerList} />
+          {/* <Route path ='/Class' component={ClassList} /> */}
+          <Route component={Error404} />
+        </Switch>
+      </div>
     </div>
   );
 }

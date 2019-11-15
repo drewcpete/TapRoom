@@ -5,9 +5,9 @@ function Home(){
     
 
     <div  className="container">
-        <div className="welcome">
-            <h4>Thanks for coming!</h4>
-        </div>
+      <div className="welcome">
+        <h4>Thanks for coming!</h4>
+      </div>
     </div>
   );
 }

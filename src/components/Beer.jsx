@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Keg from "../assets/keg.png"
+import Keg from "../assets/keg.png";
 
 function Beer(props) {
 
@@ -17,7 +17,7 @@ function Beer(props) {
 
   var beerStyle = {
     width: "275px",
-    height: "275px",
+    height: "325px",
     textAlign: "center",
     padding: "15",
   };
@@ -30,8 +30,9 @@ function Beer(props) {
   };
   var keg = {
     height: "50px",
-    backgroundColor: "green"
-  }
+    backgroundColor: "green",
+    borderRadius: "25px"
+  };
 
 
   return (
@@ -42,6 +43,7 @@ function Beer(props) {
           <p>Brewery: {props.brewery}</p>
           <p>${props.price}</p>
           <p>ABV: {props.abv}%</p>
+          <p>{props.type}</p>
           <div >
           
             <img style={keg} src={Keg} alt="keg"/>
@@ -64,6 +66,7 @@ Beer.propTypes = {
   abv: PropTypes.string,
   amount: PropTypes.int,
   price: PropTypes.int,
+  type: PropTypes.string
 };
 
 export default Beer;
