@@ -44,6 +44,7 @@ function Beer(props) {
           <p>${props.price}</p>
           <p>ABV: {props.abv}%</p>
           <p>{props.type}</p>
+          <p>{props.pour}oz Pour</p>
           <div >
           
             <img style={keg} src={Keg} alt="keg"/>
@@ -66,7 +67,8 @@ Beer.propTypes = {
   abv: PropTypes.string,
   amount: PropTypes.int,
   price: PropTypes.int,
-  type: PropTypes.string
+  type: PropTypes.string,
+  pour: PropTypes.int
 };
 
 export default Beer;

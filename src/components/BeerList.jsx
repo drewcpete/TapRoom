@@ -10,7 +10,8 @@ var MasterBeerList = [
     abv: "5.4",
     amount: 147,
     price: 3.75,
-    type: "Amber"
+    type: "Amber",
+    pour: 16
   },
   {
     name: "PBR",
@@ -18,7 +19,8 @@ var MasterBeerList = [
     abv: "4.6",
     amount: 147,
     price: 2.50,
-    type: "Lager"
+    type: "Lager",
+    pour: 16
   },
   {
     name: "Total Domination",
@@ -26,7 +28,8 @@ var MasterBeerList = [
     abv: "6.7",
     amount: 147,
     price: 5.00,
-    type: "IPA"
+    type: "IPA",
+    pour: 16
   },
   {
     name: "Twister Creek IPA",
@@ -34,7 +37,8 @@ var MasterBeerList = [
     abv: "6.7",
     amount: 147,
     price: 5.00,
-    type: "IPA"
+    type: "IPA",
+    pour: 16
   },
   {
     name: "REALLY TIED THE ROOM TOGETHER",
@@ -42,7 +46,8 @@ var MasterBeerList = [
     abv: "5.4",
     amount: 147,
     price: 5.00,
-    type: "Hazy DIPA"
+    type: "Hazy DIPA",
+    pour: 16
   },
   {
     name: "Pilsner",
@@ -50,7 +55,8 @@ var MasterBeerList = [
     abv: "4.9",
     amount: 147,
     price: 5.00,
-    type: "Pilsner"
+    type: "Pilsner",
+    pour: 16
   },
   {
     name: "Whiskey Barrel Aged Abominable Winter Ale",
@@ -58,7 +64,8 @@ var MasterBeerList = [
     abv: "10.2",
     amount: 147,
     price: 5.00,
-    type: "Winter Ale"
+    type: "Winter Ale",
+    pour: 10
   },
 
 ];
@@ -76,6 +83,7 @@ function BeerList() {
           amount={beer.amount}
           price={beer.price}
           type={beer.type}
+          pour={beer.pour}
           key={index} />
       )}
     </div>

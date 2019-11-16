@@ -6,7 +6,7 @@ import Home from "./Home";
 import NavBar from "./NavBar";
 import Error404 from "./Error404";
 import Beer from "./Beer";
-import NewBeer from "./NewBeer"
+import NewBeer from "./NewBeer";
 
 function App(){
   var siteStyle = {
