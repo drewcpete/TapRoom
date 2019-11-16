@@ -36,7 +36,31 @@ var MasterBeerList = [
     price: 5.00,
     type: "IPA"
   },
-    
+  {
+    name: "REALLY TIED THE ROOM TOGETHER",
+    brewery: "Ex Novo",
+    abv: "5.4",
+    amount: 147,
+    price: 5.00,
+    type: "Hazy DIPA"
+  },
+  {
+    name: "Pilsner",
+    brewery: "Pfriem",
+    abv: "4.9",
+    amount: 147,
+    price: 5.00,
+    type: "Pilsner"
+  },
+  {
+    name: "Whiskey Barrel Aged Abominable Winter Ale",
+    brewery: "HUB",
+    abv: "10.2",
+    amount: 147,
+    price: 5.00,
+    type: "Winter Ale"
+  },
+
 ];
 
 

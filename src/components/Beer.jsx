@@ -18,7 +18,7 @@ function Beer(props) {
 
   var beerStyle = {
     width: "275px",
-    height: "325px",
+    height: "auto",
     textAlign: "center",
     padding: "15",
   };
