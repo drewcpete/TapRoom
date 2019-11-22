@@ -12,14 +12,18 @@ function Bar(props) {
     backgroundColor: "green",
     height: level,
     background: barColor,
-    scale: "50%"
-  };
-
+    maxHeight: "100px", 
+    maxWidth: "100px",
+    margin: "0 0 0 30%"
+ };
+var keg = {
+    height: "100px"
+}
 
   return (
     <div>
-      <div>
-        <img style={bar} src={Keg} alt="keg" />
+      <div style={bar}>
+        <img src={Keg} alt="keg" />
       </div>
       <p>{props.level}</p>
     </div>

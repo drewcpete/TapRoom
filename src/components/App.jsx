@@ -8,27 +8,44 @@ import Beer from "./Beer";
 import NewBeer from "./NewBeer";
 
 
-function App(){
-  var siteStyle = {
-    backgroundColor : "lightgray",
-    borderRadius: "60px",
-    padding: "25px",
-    textAlign: "center",    
-  };
-  return (
-    <div>
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      masterBeerList: []
+    };
+    this.addBeer = this.addBeer.bind(this);
+  }
+  addBeer(newBeer){
+    var newBeerList = this.state.masterBeerList.slice();
+    newBeerList.push(newBeer)
+    this.setState({masterBeerList: newBeerList})
+  }
 
-      <NavBar/>
-      <div style={siteStyle} className="container">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/Beer" component={BeerList} />
-          <Route path ="/NewBeer" component={NewBeer} />
-          <Route component={Error404} />
-        </Switch>
+
+  render(){
+    var siteStyle = {
+      backgroundColor: "lightgray",
+      borderRadius: "60px",
+      padding: "25px",
+      textAlign: "center",
+    };
+    return (
+      <div>
+
+        <NavBar />
+        <div style={siteStyle} className="container">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/Beer" render={()=> <BeerList beerList={this.state.masterBeerList} />} />
+          <Route path="/NewBeer" component={NewBeer} />
+            <Route component={Error404} />
+          </Switch>
+        </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
+  }
+  
 
 export default App;

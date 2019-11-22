@@ -24,7 +24,7 @@ function NavBar(){
 
       <nav className="navbar newNav navbar-expand-lg navbar-toggleable-lg navbar-light bg-white border-bottom box-shadow mb-3">
         <div className="container">
-          <a className="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" href="\">&rew's Tap Room</a>
+          <a className="navbar-brand" href="\">&rew's Tap Room</a>
           <button style={navBar} className="btn btn-info nav-link text-info" ><Link style={navLink} to="/Beer">Beers</Link></button>
             
           <div className="navbar-collapse collapse d-lg-inline-flex flex-lg-row">

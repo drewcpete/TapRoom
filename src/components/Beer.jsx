@@ -20,7 +20,7 @@ function Beer(props) {
     width: "275px",
     height: "auto",
     textAlign: "center",
-    padding: "15",
+    padding: "15px",
   };
 
   var contentStyle = {
@@ -30,8 +30,10 @@ function Beer(props) {
     margin: "1% 1%",
   };
 
-var barPercent = String(100/props.amount) + "%"
+var barPercent = String((1984/props.amount)*100) + "%"
   console.log(barPercent)
+
+
   return (
     <div style={contentStyle}>
       <div style={galleryStyle} className="card">
@@ -45,7 +47,6 @@ var barPercent = String(100/props.amount) + "%"
 
           <Bar level={barPercent}/>
 
-          <button className="btn btn-warning">Pour this beer!</button>
 
             
 
@@ -61,10 +62,10 @@ Beer.propTypes = {
   name: PropTypes.string,
   brewery: PropTypes.string,
   abv: PropTypes.string,
-  amount: PropTypes.int,
-  price: PropTypes.int,
+  amount: PropTypes.string,
+  price: PropTypes.string,
   type: PropTypes.string,
-  pour: PropTypes.int
+  pour: PropTypes.string
 };
 
 export default Beer;
