@@ -59,6 +59,7 @@ var barPercent = String((1984/props.amount)*100) + "%"
 
 
 Beer.propTypes = {
+  onNewBeerCreation: PropTypes.func,
   name: PropTypes.string,
   brewery: PropTypes.string,
   abv: PropTypes.string,

@@ -30,7 +30,7 @@ function NavBar(){
           <div className="navbar-collapse collapse d-lg-inline-flex flex-lg-row">
             <ul className="navbar-nav flex-grow-1 mr-auto">
               <li className="nav-item">
-                <button style={navBar} className="btn btn-info nav-link text-light" ><Link style={navLink} to="/NewBeer">Add a new Beer</Link></button>
+                <button style={navBar} className="btn btn-info nav-link text-light" ><Link style={navLink} to="/NewBeerForm">Add a new Beer</Link></button>
                     
               </li>
 

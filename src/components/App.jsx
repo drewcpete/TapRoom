@@ -4,7 +4,6 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import NavBar from "./NavBar";
 import Error404 from "./Error404";
-import Beer from "./Beer";
 import NewBeerForm from "./NewBeerForm";
 
 
@@ -39,7 +38,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/Beer" render={()=> <BeerList beerList={this.state.masterBeerList} />} />
-    <Route path="/NewBeerForm" render={()=> <NewBeerForm onNewBeerCreation={this.handleAddingNewBeer}/>} />
+            <Route path="/NewBeerForm" render={()=> <NewBeerForm onNewBeerCreation={this.handleAddingNewBeer}/>} />
             <Route render={Error404} />
           </Switch>
         </div>

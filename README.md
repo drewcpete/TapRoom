@@ -4,7 +4,7 @@
 This application is for a fictional beer taproom.  The user can see all the beers available, add new beers, and edit current beers.  The beer icon on each beer card will change color depending on the level of beer left in the keg.  There is a button for selling the beer, which will decrease the total volume of the beer by one pint.
 
 ### Component Structure
-![flow chart](./src/assets/img/flowchart.png)
+![flow chart](src/assets/img/flowchart.png)
 
 ### Setup / Installation
 * Download this repository
