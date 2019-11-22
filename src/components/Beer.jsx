@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Keg from "../assets/img/keg.png";
+import Bar from "./Bar";
 
 function Beer(props) {
 
@@ -29,12 +29,9 @@ function Beer(props) {
     justifyContent: "center",
     margin: "1% 1%",
   };
-  var keg = {
-    height: "50px",
-    backgroundColor: "green",
-  };
 
-
+var barPercent = String(100/props.amount) + "%"
+  console.log(barPercent)
   return (
     <div style={contentStyle}>
       <div style={galleryStyle} className="card">
@@ -45,10 +42,9 @@ function Beer(props) {
           <p>ABV: {props.abv}%</p>
           <p>{props.type}</p>
           <p>{props.pour}oz Pour</p>
-          <div >
-          
-            <img style={keg} src={Keg} alt="keg"/>
-          </div>
+
+          <Bar level={barPercent}/>
+
           <button className="btn btn-warning">Pour this beer!</button>
 
             
