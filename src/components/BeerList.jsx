@@ -1,5 +1,6 @@
 import React from "react";
 import Beer from "./Beer";
+import PropTypes from 'prop-types';
 
 
 
@@ -71,12 +72,12 @@ var MasterBeerList = [
 ];
 
 
-function BeerList() {
+function BeerList(props) {
   return (
     <div>
       <h2>Current beer list!</h2>
       <hr />
-      {MasterBeerList.map((beer) =>
+      {props.beerList.map((beer,i) =>
         <Beer name={beer.name}
           brewery={beer.brewery}
           abv={beer.abv}
@@ -84,9 +85,15 @@ function BeerList() {
           price={beer.price}
           type={beer.type}
           pour={beer.pour}
-          key={beer.id} />
+          key={beer.id} 
+          index={i}
+          />
       )}
     </div>
   );
+}
+
+BeerList.PropTypes = {
+  beerList: PropTypes.array,
 }
 export default BeerList;

@@ -5,7 +5,7 @@ import Home from "./Home";
 import NavBar from "./NavBar";
 import Error404 from "./Error404";
 import Beer from "./Beer";
-import NewBeer from "./NewBeer";
+import NewBeerForm from "./NewBeerForm";
 
 
 class App extends React.Component {
@@ -14,9 +14,10 @@ class App extends React.Component {
     this.state = {
       masterBeerList: []
     };
-    this.addBeer = this.addBeer.bind(this);
+    this.handleAddingNewBeer = this.handleAddingNewBeer.bind(this);
   }
-  addBeer(newBeer){
+
+  handleAddingNewBeer(newBeer){
     var newBeerList = this.state.masterBeerList.slice();
     newBeerList.push(newBeer)
     this.setState({masterBeerList: newBeerList})
@@ -38,8 +39,8 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/Beer" render={()=> <BeerList beerList={this.state.masterBeerList} />} />
-          <Route path="/NewBeer" component={NewBeer} />
-            <Route component={Error404} />
+    <Route path="/NewBeerForm" render={()=> <NewBeerForm onNewBeerCreation={this.handleAddingNewBeer}/>} />
+            <Route render={Error404} />
           </Switch>
         </div>
       </div>
