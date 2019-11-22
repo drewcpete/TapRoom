@@ -18,8 +18,8 @@ class App extends React.Component {
 
   handleAddingNewBeer(newBeer){
     var newBeerList = this.state.masterBeerList.slice();
-    newBeerList.push(newBeer)
-    this.setState({masterBeerList: newBeerList})
+    newBeerList.push(newBeer);
+    this.setState({masterBeerList: newBeerList});
   }
 
 
@@ -45,7 +45,6 @@ class App extends React.Component {
       </div>
     );
   }
-  }
+}
   
-
 export default App;

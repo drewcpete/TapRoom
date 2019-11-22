@@ -30,8 +30,8 @@ function Beer(props) {
     margin: "1% 1%",
   };
 
-var barPercent = String((1984/props.amount)*100) + "%"
-  console.log(barPercent)
+  var barPercent = String((1984/props.amount)*100) + "%";
+  console.log(barPercent);
 
 
   return (

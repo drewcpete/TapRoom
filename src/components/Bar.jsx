@@ -15,10 +15,10 @@ function Bar(props) {
     maxHeight: "100px", 
     maxWidth: "100px",
     margin: "0 0 0 30%"
- };
-var keg = {
+  };
+  var keg = {
     height: "100px"
-}
+  };
 
   return (
     <div>

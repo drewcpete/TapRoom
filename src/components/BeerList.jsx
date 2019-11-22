@@ -1,6 +1,6 @@
 import React from "react";
 import Beer from "./Beer";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 
 
@@ -22,7 +22,7 @@ function BeerList(props) {
           pour={beer.pour}
           key={beer.id} 
           index={i}
-          />
+        />
       )}
     </div>
   );
@@ -30,5 +30,5 @@ function BeerList(props) {
 
 BeerList.PropTypes = {
   beerList: PropTypes.array,
-}
+};
 export default BeerList;
