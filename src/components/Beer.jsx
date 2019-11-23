@@ -4,12 +4,6 @@ import Bar from "./Bar";
 
 function Beer(props) {
 
-//   var imageStyle = {
-//     width: "200",
-//     // maxHeight: "150px",
-//     backgroundColor: "grey",
-//   };
-
   var galleryStyle = {
     margin: "0 auto 0 auto",
     backgroundColor: "grey",
@@ -30,7 +24,8 @@ function Beer(props) {
     margin: "1% 1%",
   };
 
-  var barPercent = String((1984/props.amount)*100) + "%";
+  var newAmount = Number(props.amount)
+  var barPercent = String((1984/newAmount)*100) + "%";
   console.log(barPercent);
 
 

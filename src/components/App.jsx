@@ -17,9 +17,9 @@ class App extends React.Component {
   }
 
   handleAddingNewBeer(newBeer){
-    var newBeerList = this.state.masterBeerList.slice();
-    newBeerList.push(newBeer);
-    this.setState({masterBeerList: newBeerList});
+    var newMasterBeerList = this.state.masterBeerList.slice();
+    newMasterBeerList.push(newBeer);
+    this.setState({masterBeerList: newMasterBeerList});
   }
 
 

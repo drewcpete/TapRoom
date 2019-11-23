@@ -2,38 +2,36 @@ import React from "react";
 import PropTypes from "prop-types";
 import { v4 } from "uuid";
 import { Redirect } from "react-router-dom";
+import Beer from "./Beer"
 
 
 function NewBeerForm(props) {
-
-  let toHome = false;
+  console.log(props)
+  // let toHome = false;
   let _brewery = null;
   let _name = null;
   let _abv = null;
   let _type = null;
   let _pour = null;
   let _price = null;
-  let _amount = "1984";
+  let _amount = null;
 
-
-
-  function handleNewBeerSubmit(event) {
+  function handleNewBeerSubmission(event) {
     event.preventDefault();
-    props.onNewBeerCreation({ name: _name.value, brewery: _brewery.value, abv: _abv, type: _type, pour: _pour, price: _price, amount: _amount, id: v4() });
-    _brewery= "";
-    _name= "";
-    _abv= "" ;
-    _type= "";
-    _pour= "";
-    _price= "";
-
-
+    console.log(_name.value);
+    props.onNewBeerCreation({name: _name.value, brewery: _brewery.value, abv: _abv, type: _type, pour: _pour, price: _price, amount: _amount, id: v4() });
+    _brewery.value= "";
+    _name.value= "";
+    _abv.value= "" ;
+    _type.value= "";
+    _pour.value= "";
+    _price.value= "";
+    _amount.value= "";
   }
-
 
   return (
     <div>
-      <form onSubmit={handleNewBeerSubmit}>
+      <form onSubmit={handleNewBeerSubmission}>
         <input
           type="text"
           id="name"
@@ -69,6 +67,12 @@ function NewBeerForm(props) {
           id="pour"
           placeholder="Pour Size"
           ref={(input) => { _pour = input; }} />
+        <hr />
+        <input
+          type="text"
+          id="amount"
+          placeholder="Quantity"
+          ref={(input) => { _amount = input; }} />
         <hr />
         <button type="submit">Save Beer</button>
       </form>    
